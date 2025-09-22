@@ -11,7 +11,11 @@ const Home = () => {
   const [trending, setTrending] = useState([]);
   const [filtered, setFiltered] = useState([]);
 
-  const IMAGE_BASE_URL = "https://urbancart-shop.onrender.com/uploads/";
+  <img
+  src={product.image ? `${IMAGE_BASE_URL}${product.image}` : "https://via.placeholder.com/150"}
+  alt={product.name}
+  className="product-image"
+/>
 
 
   // UI / nav states
