@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "http://localhost:5000/api",
+  baseURL: process.env.REACT_APP_API_URL || "https://urbancart-shop.onrender.com/api",
 });
-export const IMAGE_BASE_URL = "http://localhost:5000";
+export const IMAGE_BASE_URL = "https://urbancart-shop.onrender.com/";
 // Attach token automatically if present
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
