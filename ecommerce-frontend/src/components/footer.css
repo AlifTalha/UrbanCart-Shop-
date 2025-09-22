@@ -1,0 +1,77 @@
+/* Footer styles */
+.footer {
+  background: #F85606;
+  color: white;
+  padding: 0px 20px 5px 20px;
+  margin-bottom: -10px;
+}
+
+.footer-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Typography */
+.footer-brand {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  color: #d1d5db;
+  margin-bottom: 10px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li a {
+  color: #d1d5db;
+  text-decoration: none;
+}
+
+.footer-list li a:hover {
+  color: #2563eb;
+}
+
+/* Newsletter */
+.footer-input {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.footer-btn {
+  background: #0824af;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.footer-btn:hover {
+  background: #0b183d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
