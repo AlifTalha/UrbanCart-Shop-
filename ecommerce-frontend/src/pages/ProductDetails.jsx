@@ -92,19 +92,20 @@ const ProductDetails = () => {
           }}
         >
           <img
-            src={
-              product.image
-                ? `${IMAGE_BASE_URL}${product.image}`
-                : "https://via.placeholder.com/400"
-            }
-            alt={product.name}
-            style={{
-              width: "100%",
-              maxWidth: 520,
-              borderRadius: 8,
-              objectFit: "cover",
-            }}
-          />
+  src={
+    product.image
+      ? `https://urbancart-shop.onrender.com/uploads/${product.image}`
+      : "https://via.placeholder.com/400"
+  }
+  alt={product.name}
+  style={{
+    width: "100%",
+    maxWidth: 520,
+    borderRadius: 8,
+    objectFit: "cover",
+  }}
+/>
+
         </div>
 
         {/* 🔹 Product + Delivery Details */}
