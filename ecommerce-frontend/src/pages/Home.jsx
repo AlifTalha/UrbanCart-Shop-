@@ -11,6 +11,9 @@ const Home = () => {
   const [trending, setTrending] = useState([]);
   const [filtered, setFiltered] = useState([]);
 
+  const IMAGE_BASE_URL = "https://urbancart-shop.onrender.com/uploads/";
+
+
   // UI / nav states
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [currentImage, setCurrentImage] = useState(0);

@@ -92,11 +92,12 @@ const ProductDetails = () => {
           }}
         >
           <img
-  src={
-    product.image
-      ? `https://urbancart-shop.onrender.com/uploads/${product.image}`
-      : "https://via.placeholder.com/400"
-  }
+ src={
+  product.image
+    ? `https://urbancart-shop.onrender.com/uploads/${product.image}`
+    : "https://via.placeholder.com/400"
+}
+
   alt={product.name}
   style={{
     width: "100%",
