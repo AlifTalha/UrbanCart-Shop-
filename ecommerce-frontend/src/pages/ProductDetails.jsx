@@ -6,7 +6,7 @@ import { CartContext } from "../context/CartContext";
 const ProductDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-const IMAGE_BASE_URL = "https://urbancart-shop.onrender.com";
+
   // 🔹 States
   const [product, setProduct] = useState(null);
   const [qty, setQty] = useState(1);
@@ -91,17 +91,20 @@ const IMAGE_BASE_URL = "https://urbancart-shop.onrender.com";
             boxShadow: "0px 2px 8px rgba(0,0,0,0.1)",
           }}
         >
-         <img
-  src={product.image ? `${IMAGE_BASE_URL}${product.image}` : "https://via.placeholder.com/400"}
-  alt={product.name}
-  style={{
-    width: "100%",
-    maxWidth: 520,
-    borderRadius: 8,
-    objectFit: "cover",
-  }}
-/>
-
+          <img
+            src={
+              product.image
+                ? `${IMAGE_BASE_URL}${product.image}`
+                : "https://via.placeholder.com/400"
+            }
+            alt={product.name}
+            style={{
+              width: "100%",
+              maxWidth: 520,
+              borderRadius: 8,
+              objectFit: "cover",
+            }}
+          />
         </div>
 
         {/* 🔹 Product + Delivery Details */}

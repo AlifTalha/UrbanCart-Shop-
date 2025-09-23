@@ -170,13 +170,7 @@ const handleSubmit = async (e) => {
         {products.map((product) => (
           <div key={product._id} className="product-card">
             {product.image && (
-            <img
-  src={product.image ? `https://urbancart-shop.onrender.com${product.image}` : "https://via.placeholder.com/150"}
-  alt={product.name}
-  className="product-image"
-/>
-
-
+              <img src={`https://urbancart-shop.onrender.com${product.image}`} alt={product.name} className="product-image" />
             )}
             <h3 className="product-name">{product.name}</h3>
             <p className="product-price">${product.price}</p>

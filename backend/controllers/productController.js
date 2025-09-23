@@ -33,7 +33,7 @@ const addProduct = async (req, res) => {
       price,
       category,
       stock,
-      image: req.file ? `/uploads/${req.file.filename}` : null, // ✅ multer handles this
+      image: req.file ? `/uploads/${req.file.filename}` : null, 
     });
 
     await product.save();

@@ -23,7 +23,7 @@ const Header = () => {
               alt="E-Commerce Logo"
               className="logo-img"
             />
-            <span className="logo-text"><span style={{ color: "#0f09beff" , fontSize: "35px" , fontFamily: "cursive", marginRight: "15px" }}>UrbanCart</span> Shophify</span>
+            <span className="logo-text"><span style={{ color: "#0f09beff" , fontSize: "35px" , fontFamily: "cursive", marginRight: "15px" }}>UrbanCart</span> Shop</span>
           </Link>
         </div>
 
